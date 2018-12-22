@@ -3,5 +3,5 @@ H5滑动删除
 
 # 最终效果
 
-![效果图片](/slidingDelete/img/滑动删除最终效果.png)
+![效果图片](https://github.com/jddk/slidingDelete/img/滑动删除最终效果.png)
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>vue滑动删除</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="app" v-cloak>
+		<div class="item flex"
+			v-for="(item,index) in items" :key="index"
+			:class="{'active':item.isTouchMove}"
+			@touchstart="touchstart($event)"
+        	@touchmove="touchmove($event,index)">
+			
+			<div class="item-cells">{{item.name}}</div>
+			<!-- 滑动删除 -->
+        	<div class="del" @click.stop="del(index)">删除</div>
+		</div>
+	</div>
+<script src="lib/vue.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
+
+

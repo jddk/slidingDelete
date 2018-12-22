@@ -1,0 +1,37 @@
+#app{
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: #f0f0f0;
+}
+
+.item{
+	
+}
+.item-cells{
+	background-color: #fff;
+	width: 100vw;
+	height: 1.5rem;
+	margin-bottom: .1rem;
+
+	transition: all 0.4s;
+	transform: translateX(2rem);
+	margin-left: -2rem;
+}
+/* 滑动取消收藏 */
+.del {
+  background-color: #ff7664;
+  width: 2rem;
+  font-size: .34rem;
+  text-align: center;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  color: #fff;
+
+  transform: translateX(2rem);
+  transition: all 0.4s;
+}
+.active .item-cells,
+.active .del {
+  transform: translateX(0);
+}
